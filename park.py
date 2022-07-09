@@ -26,9 +26,9 @@ class ParkingGarage:
 
     def deleting(self):    
         self.name = input("What  is your name? ")
-        print(f"{self.name} Swipe your card!")
         for item in self.parking_spaces:
             if item == self.name:
+                print(f"{self.name} Swipe your card!")
                 self.parking_spaces[self.name] = "paid"
                 print(self.parking_spaces)
                 del self.parking_spaces[self.name]
